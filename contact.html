@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Cheeseburger by AB. Appelez-nous au 05 40 35 34 43 ou visitez l'une de nos 4 succursales.">
+  <meta name="keywords" content="contact cheeseburger, téléphone restaurant, annaba">
+  <meta name="author" content="Cheeseburger by AB">
+  <meta property="og:title" content="Contact  Cheeseburger by AB">
+  <meta property="og:description" content="Contactez-nous pour toute question ou réservation.">
+  <title>Contact  Cheeseburger by AB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo-text">CHEESEBURGER</a>
+    <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu"></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="succursales.html">Succursales</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="a-propos.html">À Propos</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="min-height: 45vh; padding-top: 100px;">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">CONTACTEZ-NOUS</div>
+    <h1 style="font-size: clamp(2.5rem,6vw,4rem);">Restons en <span>CONTACT</span></h1>
+    <p>Nous serions ravis de vous entendre. Appelez-nous ou visitez l'une de nos succursales !</p>
+  </div>
+</section>
+
+<!-- CONTACT INFO -->
+<section class="brand-section page-content">
+  <div class="section-container">
+    <div class="section-header fade-in">
+      <h2>Nos Coordonnées</h2>
+      <div class="section-divider"></div>
+      <p>Plusieurs façons de nous joindre. Choisissez celle qui vous convient le mieux.</p>
+    </div>
+    <div class="branches-grid">
+      <div class="branch-card fade-in">
+        <div class="branch-header"><h3> Appelez-Nous</h3></div>
+        <div class="branch-body">
+          <div class="branch-detail"><span class="icon"></span><span>Général : 05 40 35 34 43</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Tous les jours : 10h  23h</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Disponible sur WhatsApp</span></div>
+          <div class="branch-actions">
+            <button class="btn-small btn-call" onclick="callNumber('+213540353443')"> Appeler Maintenant</button>
+          </div>
+        </div>
+      </div>
+      <div class="branch-card fade-in">
+        <div class="branch-header"><h3> Nos Succursales</h3></div>
+        <div class="branch-body">
+          <div class="branch-detail"><span class="icon"></span><span>Saint-Cloud, Annaba</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Hay Al Abtal, Annaba</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Kouba, Alger</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>El Bouni, Annaba</span></div>
+          <div class="branch-actions">
+            <a href="succursales.html" class="btn-small btn-map"> Voir les Directions</a>
+          </div>
+        </div>
+      </div>
+      <div class="branch-card fade-in">
+        <div class="branch-header"><h3> Suivez-Nous</h3></div>
+        <div class="branch-body">
+          <div class="branch-detail"><span class="icon"></span><span>@cheese_burger_by_ab</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Cheeseburger by AB</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>@cheeseburger_ab</span></div>
+          <div class="branch-actions">
+            <a href="https://www.instagram.com/cheese_burger_by_ab" target="_blank" rel="noopener noreferrer" class="btn-small btn-call"> Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="menu-section">
+  <div class="section-container">
+    <div class="section-header fade-in">
+      <h2>Envoyez-Nous un Message</h2>
+      <div class="section-divider"></div>
+      <p>Des questions ? Des suggestions ? Remplissez le formulaire ci-dessous.</p>
+    </div>
+    <form class="contact-form fade-in" method="POST" action="#">
+      <div class="form-group">
+        <label for="name">Votre Nom</label>
+        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Votre Email</label>
+        <input type="email" id="email" name="email" placeholder="votre@email.com" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="subject">Sujet</label>
+        <select id="subject" name="subject" required>
+          <option value="">Choisissez un sujet</option>
+          <option value="reservation">Réservation</option>
+          <option value="feedback">Avis / Commentaire</option>
+          <option value="catering">Service Traiteur</option>
+          <option value="partnership">Partenariat</option>
+          <option value="other">Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Votre Message</label>
+        <textarea id="message" name="message" placeholder="Écrivez votre message ici..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width: 100%;"> Envoyer le Message</button>
+      <p style="color: var(--text-muted); font-size: 0.8rem; text-align: center; margin-top: 1rem;">
+         Note : Ce formulaire est une démonstration. Pour une commande rapide, appelez-nous directement au 05 40 35 34 43.
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>CHEESEBURGER BY AB</h4>
+      <p>L'expérience cheeseburger ultime. Ingrédients premium, préparés avec passion, servis avec amour à travers 4 succursales en Algérie.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/cheese_burger_by_ab" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TK</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Liens Rapides</h4>
+      <a href="index.html">Accueil</a>
+      <a href="menu.html">Menu</a>
+      <a href="succursales.html">Succursales</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="a-propos.html">À Propos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Nos Succursales</h4>
+      <a href="succursales.html#saint-cloud">Saint-Cloud, Annaba</a>
+      <a href="succursales.html#hay-al-abtal">Hay Al Abtal, Annaba</a>
+      <a href="succursales.html#kouba">Kouba, Alger</a>
+      <a href="succursales.html#el-bouni">El Bouni, Annaba</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p> 05 40 35 34 43</p>
+      <p> 4 Succursales en Algérie</p>
+      <p> Tous les jours : 10h  23h</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Cheeseburger by AB. Tous droits réservés. Fabriqué avec du fromage et de l'amour.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

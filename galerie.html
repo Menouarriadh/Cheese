@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galerie photo de Cheeseburger by AB. Découvrez nos burgers, notre restaurant et notre ambiance.">
+  <meta name="keywords" content="galerie cheeseburger, photos burger, restaurant annaba">
+  <meta name="author" content="Cheeseburger by AB">
+  <meta property="og:title" content="Galerie  Cheeseburger by AB">
+  <meta property="og:description" content="Photos de nos burgers premium et de nos succursales.">
+  <title>Galerie  Cheeseburger by AB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo-text">CHEESEBURGER</a>
+    <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu"></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="succursales.html">Succursales</a></li>
+      <li><a href="galerie.html" class="active">Galerie</a></li>
+      <li><a href="a-propos.html">À Propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero hero-img" style="min-height: 45vh; padding-top: 100px; background-image: url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=1920&q=80');">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">GALERIE</div>
+    <h1 style="font-size: clamp(2.5rem,6vw,4rem);">Notre <span>GALERIE</span></h1>
+    <p>Un aperçu visuel de ce qui vous attend chez Cheeseburger by AB.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="brand-section page-content" style="padding-top: 4rem;">
+  <div class="section-container">
+    <div class="section-header fade-in">
+      <h2>Nos Créations</h2>
+      <div class="section-divider"></div>
+      <p>Chaque photo raconte une histoire de saveur, de passion et de qualité.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200&q=80', 'Classic Double Cheeseburger')">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Double Cheeseburger" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Double Cheeseburger</h4>
+          <p>Double steak, double fromage</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1550547660-d9450f859349?w=1200&q=80', 'Classic Viande')">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80" alt="Classic Viande" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Classic Viande</h4>
+          <p>Notre best-seller signature</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=1200&q=80', 'Chicken Burger')">
+        <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600&q=80" alt="Chicken Burger" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Chicken Burger</h4>
+          <p>Poulet croustillant premium</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1200&q=80', 'Big M Special')">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80" alt="Big M Special" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Big M Special</h4>
+          <p>140g de pur bœuf</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=1200&q=80', 'Burger Brioche')">
+        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&q=80" alt="Burger Brioche" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Burger Brioche</h4>
+          <p>Pain brioche maison</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?w=1200&q=80', 'Végétarien')">
+        <img src="https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?w=600&q=80" alt="Végétarien" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Végétarien</h4>
+          <p>Légumes grillés frais</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=1200&q=80', 'Burger Frites')">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600&q=80" alt="Burger Frites" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Burger & Frites</h4>
+          <p>Le combo parfait</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=1200&q=80', 'Crispy Tenders')">
+        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&q=80" alt="Crispy Tenders" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Crispy Tenders</h4>
+          <p>Poulet pané croustillant</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESTAURANT INTERIOR -->
+<section class="menu-section">
+  <div class="section-container">
+    <div class="section-header fade-in">
+      <h2>L'Ambiance</h2>
+      <div class="section-divider"></div>
+      <p>Un cadre chaleureux et moderne pour savourer vos burgers préférés.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200&q=80', 'Intérieur Restaurant')">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80" alt="Intérieur Restaurant" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Intérieur Moderne</h4>
+          <p>Ambiance conviviale</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80', 'Salle de Restaurant')">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Salle de Restaurant" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Salle Principale</h4>
+          <p>Design contemporain</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80', 'Service Client')">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Service Client" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Service Client</h4>
+          <p>Accueil chaleureux</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&q=80', 'Cuisine Ouverte')">
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80" alt="Cuisine Ouverte" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Cuisine Ouverte</h4>
+          <p>Transparence totale</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>CHEESEBURGER BY AB</h4>
+      <p>L'expérience cheeseburger ultime. Ingrédients premium, préparés avec passion, servis avec amour à travers 4 succursales en Algérie.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/cheese_burger_by_ab" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TK</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Liens Rapides</h4>
+      <a href="index.html">Accueil</a>
+      <a href="menu.html">Menu</a>
+      <a href="succursales.html">Succursales</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="a-propos.html">À Propos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Nos Succursales</h4>
+      <a href="succursales.html#saint-cloud">Saint-Cloud, Annaba</a>
+      <a href="succursales.html#hay-al-abtal">Hay Al Abtal, Annaba</a>
+      <a href="succursales.html#kouba">Kouba, Alger</a>
+      <a href="succursales.html#el-bouni">El Bouni, Annaba</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p> 05 40 35 34 43</p>
+      <p> 4 Succursales en Algérie</p>
+      <p> Tous les jours : 10h  23h</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Cheeseburger by AB. Tous droits réservés. Fabriqué avec du fromage et de l'amour.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

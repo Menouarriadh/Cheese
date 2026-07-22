@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trouvez votre succursale Cheeseburger by AB la plus proche. 4 emplacements à Annaba et Alger avec Google Maps.">
+  <meta name="keywords" content="cheeseburger annaba, restaurant kouba, fast food el bouni, hay al abtal">
+  <meta name="author" content="Cheeseburger by AB">
+  <meta property="og:title" content="Succursales  Cheeseburger by AB">
+  <meta property="og:description" content="4 succursales en Algérie. Trouvez la vôtre sur Google Maps.">
+  <title>Succursales  Cheeseburger by AB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo-text">CHEESEBURGER</a>
+    <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu"></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="succursales.html" class="active">Succursales</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="a-propos.html">À Propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="min-height: 45vh; padding-top: 100px;">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">4 SUCCURSALES</div>
+    <h1 style="font-size: clamp(2.5rem,6vw,4rem);">Trouvez Votre <span>SUCCURSALE</span></h1>
+    <p>Sur place, à emporter ou livraison  nous ne sommes jamais loin.</p>
+  </div>
+</section>
+
+<!-- BRANCHES -->
+<section class="branches-section page-content">
+  <div class="section-container">
+    <div class="branches-grid">
+
+      <!-- Saint-Cloud -->
+      <div class="branch-card fade-in" id="saint-cloud">
+        <div class="branch-header">
+          <div class="branch-number">1</div>
+          <h3>Succursale Saint-Cloud</h3>
+          <div class="district">Annaba  Centre-ville</div>
+        </div>
+        <div class="branch-body">
+          <div class="branch-detail"><span class="icon"></span><span>Annaba, Saint-Cloud, Algérie</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>05 40 35 34 43</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Tous les jours : 10h  23h</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Parking disponible</span></div>
+          <div class="branch-actions">
+            <button class="btn-small btn-call" onclick="callNumber('+213540353443')"> Appeler</button>
+            <button class="btn-small btn-map" onclick="openMap('https://www.instagram.com/cheese_burger_by_ab')"> Instagram</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hay Al Abtal -->
+      <div class="branch-card fade-in" id="hay-al-abtal">
+        <div class="branch-header">
+          <div class="branch-number">2</div>
+          <h3>Succursale Hay Al Abtal</h3>
+          <div class="district">Annaba  Hay Al Abtal</div>
+        </div>
+        <div class="branch-body">
+          <div class="branch-detail"><span class="icon"></span><span>Annaba, Hay Al Abtal, Algérie</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>05 40 35 34 43</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Tous les jours : 10h  23h</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Parking disponible</span></div>
+          <div class="branch-actions">
+            <button class="btn-small btn-call" onclick="callNumber('+213540353443')"> Appeler</button>
+            <button class="btn-small btn-map" onclick="openMap('https://maps.app.goo.gl/yxGh5aa6AVUo8BeY7')"> Directions</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kouba -->
+      <div class="branch-card fade-in" id="kouba">
+        <div class="branch-header">
+          <div class="branch-number">3</div>
+          <h3>Succursale Kouba</h3>
+          <div class="district">Alger  Kouba</div>
+        </div>
+        <div class="branch-body">
+          <div class="branch-detail"><span class="icon"></span><span>Alger, Kouba, Algérie</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>05 40 35 34 43</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Tous les jours : 10h  23h</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Parking disponible</span></div>
+          <div class="branch-actions">
+            <button class="btn-small btn-call" onclick="callNumber('+213540353443')"> Appeler</button>
+            <button class="btn-small btn-map" onclick="openMap('https://maps.app.goo.gl/YfQ5gSE2n7qHg4JaA')"> Directions</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- El Bouni -->
+      <div class="branch-card fade-in" id="el-bouni">
+        <div class="branch-header">
+          <div class="branch-number">4</div>
+          <h3>Succursale El Bouni</h3>
+          <div class="district">Annaba  El Bouni</div>
+        </div>
+        <div class="branch-body">
+          <div class="branch-detail"><span class="icon"></span><span>Annaba, El Bouni, Algérie</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>05 40 35 34 43</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Tous les jours : 10h  23h</span></div>
+          <div class="branch-detail"><span class="icon"></span><span>Parking disponible</span></div>
+          <div class="branch-actions">
+            <button class="btn-small btn-call" onclick="callNumber('+213540353443')"> Appeler</button>
+            <button class="btn-small btn-map" onclick="openMap('https://maps.app.goo.gl/NVbgnrHNFbJWbBd3A')"> Directions</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="map-section" style="padding-bottom: 4rem;">
+  <div class="section-container">
+    <div class="section-header fade-in">
+      <h2>Nous Trouver sur la Carte</h2>
+      <div class="section-divider"></div>
+      <p>Cliquez sur une succursale ci-dessus pour voir sa localisation sur Google Maps.</p>
+    </div>
+    <div style="background: var(--color-60-card); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,215,0,0.1); box-shadow: 0 20px 60px rgba(0,0,0,0.5); text-align: center; padding: 3rem;">
+      <div style="font-size: 4rem; margin-bottom: 1rem;"></div>
+      <h4 style="font-family: 'Fredoka One', cursive; color: var(--color-30); font-size: 1.4rem; margin-bottom: 0.5rem;">Carte Interactive</h4>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 1.5rem; line-height: 1.7;">
+        Utilisez les boutons "Directions" sur chaque carte de succursale pour ouvrir la localisation exacte sur Google Maps.
+        Chaque succursale dispose d'un lien Google Maps direct pour une navigation facile.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <button class="btn btn-secondary" onclick="openMap('https://maps.app.goo.gl/yxGh5aa6AVUo8BeY7')">Hay Al Abtal</button>
+        <button class="btn btn-secondary" onclick="openMap('https://maps.app.goo.gl/YfQ5gSE2n7qHg4JaA')">Kouba</button>
+        <button class="btn btn-secondary" onclick="openMap('https://maps.app.goo.gl/NVbgnrHNFbJWbBd3A')">El Bouni</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>CHEESEBURGER BY AB</h4>
+      <p>L'expérience cheeseburger ultime. Ingrédients premium, préparés avec passion, servis avec amour à travers 4 succursales en Algérie.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/cheese_burger_by_ab" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TK</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Liens Rapides</h4>
+      <a href="index.html">Accueil</a>
+      <a href="menu.html">Menu</a>
+      <a href="succursales.html">Succursales</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="a-propos.html">À Propos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Nos Succursales</h4>
+      <a href="succursales.html#saint-cloud">Saint-Cloud, Annaba</a>
+      <a href="succursales.html#hay-al-abtal">Hay Al Abtal, Annaba</a>
+      <a href="succursales.html#kouba">Kouba, Alger</a>
+      <a href="succursales.html#el-bouni">El Bouni, Annaba</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p> 05 40 35 34 43</p>
+      <p> 4 Succursales en Algérie</p>
+      <p> Tous les jours : 10h  23h</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Cheeseburger by AB. Tous droits réservés. Fabriqué avec du fromage et de l'amour.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
